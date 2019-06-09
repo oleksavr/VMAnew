@@ -136,7 +136,7 @@ public class VetListFragment extends Fragment {
         activity.getSupportActionBar().setSubtitle(subtitle);
     }
 
-    private void updateUI(){
+    public void updateUI(){
         VisitLab visitLab = VisitLab.get(getActivity());
         List<Visit> visits = visitLab.getVisits();
 
