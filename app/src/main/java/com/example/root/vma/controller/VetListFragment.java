@@ -109,7 +109,8 @@ public class VetListFragment extends Fragment {
             case R.id.new_visit:
                 Visit visit = new Visit();
                 VisitLab.get(getActivity()).addVisit(visit);
-
+                 updateUI();
+                 mCallbacks.onVisitSelected(visit);
                 return true;
             case R.id.show_subtitle:
                 mSubtitleVisible = !mSubtitleVisible;
@@ -176,8 +177,7 @@ public class VetListFragment extends Fragment {
 
         @Override
         public void onClick(View v) {
-           Intent intent = VisitPagerActivity.newIntent(getActivity(),mVisit.getId());
-           startActivity(intent);
+          mCallbacks.onVisitSelected(mVisit);
         }
     }
 
