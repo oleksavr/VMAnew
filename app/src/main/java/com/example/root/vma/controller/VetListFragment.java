@@ -109,9 +109,7 @@ public class VetListFragment extends Fragment {
             case R.id.new_visit:
                 Visit visit = new Visit();
                 VisitLab.get(getActivity()).addVisit(visit);
-                Intent intent = VisitPagerActivity
-                        .newIntent(getActivity(),visit.getId());
-                startActivity(intent);
+
                 return true;
             case R.id.show_subtitle:
                 mSubtitleVisible = !mSubtitleVisible;
