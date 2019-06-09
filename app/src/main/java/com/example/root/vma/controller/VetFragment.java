@@ -1,6 +1,7 @@
 package com.example.root.vma.controller;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
@@ -41,6 +42,7 @@ import java.util.List;
 import java.util.UUID;
 
 import static android.widget.CompoundButton.*;
+import static com.example.root.vma.controller.VetListFragment.*;
 
 public class VetFragment extends Fragment {
 
@@ -62,7 +64,17 @@ public class VetFragment extends Fragment {
     private Button mReportButton;
     private ImageButton mPhotoButton;
     private ImageView mPhotoView;
+    private Callbacks mCallbacks;
 
+
+    /**
+     *
+     * Required interface for hosting activities
+     */
+
+    public interface Callbacks {
+        void onVisitUpdated(Visit visit);
+    }
 
 
     public static VetFragment newInstance(UUID visitID){
@@ -74,6 +86,11 @@ public class VetFragment extends Fragment {
         return fragment;
     }
 
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        mCallbacks = (Callbacks) context;
+    }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -90,6 +107,12 @@ public class VetFragment extends Fragment {
 
         VisitLab.get(getActivity())
                 .updateVisit(mVisit);
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        mCallbacks = null;
     }
 
     @Nullable
