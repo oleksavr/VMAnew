@@ -6,7 +6,7 @@ import android.support.v4.app.Fragment;
 import com.example.root.vma.R;
 import com.example.root.vma.model.Visit;
 
-public class VetListActivity extends SingleFragmentActivity implements VetListFragment.Callbacks {
+public class VetListActivity extends SingleFragmentActivity implements VetListFragment.Callbacks, VetFragment.Callbacks{
     @Override
     protected Fragment createFragment() {
         return new VetListFragment();
@@ -30,6 +30,11 @@ public class VetListActivity extends SingleFragmentActivity implements VetListFr
                     .replace(R.id.detail_fragment_container,newDetail)
                     .commit();
         }
+
+    }
+
+    @Override
+    public void onVisitUpdated(Visit visit) {
 
     }
 }
