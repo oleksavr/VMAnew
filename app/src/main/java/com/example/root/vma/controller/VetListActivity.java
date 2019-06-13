@@ -36,5 +36,9 @@ public class VetListActivity extends SingleFragmentActivity implements VetListFr
     @Override
     public void onVisitUpdated(Visit visit) {
 
+        VetListFragment listFragment = (VetListFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.fragment_container);
+        listFragment.updateUI();
+
     }
 }
