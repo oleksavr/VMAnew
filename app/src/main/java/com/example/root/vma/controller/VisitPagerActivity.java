@@ -17,7 +17,7 @@ import com.example.root.vma.model.Visit;
 import java.util.List;
 import java.util.UUID;
 
-public class VisitPagerActivity extends AppCompatActivity {
+public class VisitPagerActivity extends AppCompatActivity implements VetFragment.Callbacks {
 
     public static final String EXTRA_VISIT_ID = "com.example.root.vma.visit_id";
 
@@ -61,6 +61,11 @@ public class VisitPagerActivity extends AppCompatActivity {
                 break;
             }
         }
+
+    }
+
+    @Override
+    public void onVisitUpdated(Visit visit) {
 
     }
 }
