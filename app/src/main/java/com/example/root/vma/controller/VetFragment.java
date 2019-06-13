@@ -294,6 +294,12 @@ public class VetFragment extends Fragment {
         }
     }
 
+
+    private void updateVisit(){
+        VisitLab.get(getActivity()).updateVisit(mVisit);
+        mCallbacks.onVisitUpdated(mVisit);
+    }
+
     private void updateDate() {
         mDateButton.setText(mVisit.getDate().toString());
     }
