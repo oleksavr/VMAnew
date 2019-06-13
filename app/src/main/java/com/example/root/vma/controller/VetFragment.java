@@ -131,6 +131,7 @@ public class VetFragment extends Fragment {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 mVisit.setTitle(s.toString());
+                updateVisit();
             }
 
             @Override
@@ -154,6 +155,7 @@ public class VetFragment extends Fragment {
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                     mVisit.setDetails(charSequence.toString());
+                    updateVisit();
             }
 
             @Override
@@ -184,6 +186,7 @@ public class VetFragment extends Fragment {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 mVisit.setSolved(isChecked);
+                updateVisit();
             }
         });
 
@@ -262,6 +265,7 @@ public class VetFragment extends Fragment {
             Date date = (Date) data
                     .getSerializableExtra(DatePickerFragment.EXTRA_DATE);
             mVisit.setDate(date);
+            updateVisit();
             updateDate();
         } else  if (requestCode == REQUEST_CONTACT && data != null){
             Uri contactUri = data.getData();
@@ -279,6 +283,7 @@ public class VetFragment extends Fragment {
             c.moveToFirst();
             String owner = c.getString(0);
             mVisit.setOwner(owner);
+            updateVisit();
             mOwnerButton.setText(owner);
         }finally {
                 c.close();
@@ -290,6 +295,7 @@ public class VetFragment extends Fragment {
                     mPhotoFile);
 
             getActivity().revokeUriPermission(uri,Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
+            updateVisit();
             updatePhotoView();
         }
     }
