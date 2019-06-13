@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ВМА</string>
+    <string name="vet_title_hint">Введіть імя відвідування</string>
+    <string name="vet_title_label">Назва</string>
+    <string name="vet_details_label">Деталі</string>
+    <string name="vet_solved_label">Вирішено</string>
+    <string name="visit_title">Заголовок</string>
+    <string name="visit_date">Дата</string>
+    <string name="date_picker">Дата візиту. </string>
+    <string name="new_visit">Новий візит</string>
+    <string name="show_subtitle">Показати підзаголовок</string>
+    <string name="hide_subtitle">Заховати підзаголовок</string>
+    <string name="subtitle_format">%1d візити</string>
+    <string name="enter_a_ditals">Введіть деталі</string>
+    <string name="owner_text">Виберіть власника</string>
+    <string name="visit_report_text">Відішли дані про візит</string>
+    <string name="visit_report">%1$s!
+        Візит був  %2$s. %3$s, and %4$s
+    </string>
+    <string name="visit_report_solved">Виклик закритий</string>
+    <string name="visit_report_unsolved">Виклик не закритий</string>
+    <string name="visit_report_no_owner">Нема власника вдома</string>
+    <string name="visit_report_owner_regected">Власником %s відмінено  виклик</string>
+    <string name="visit_report_owner">Власник є  %s.</string>
+    <string name="visit_report_subject">Заключення</string>
+    <string name="send_report">Відіслвти заключення</string>
+
+    <plurals name="subtitle_plural">
+        <item quantity="one">%1d візит</item>
+        <item quantity="other">%1d візитів</item>
+        <item quantity="few">%1d візитів</item>
+        <item quantity="many">%1d візитів</item>
+    </plurals>
+</resources>

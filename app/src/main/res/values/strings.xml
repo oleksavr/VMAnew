@@ -10,7 +10,7 @@
     <string name="new_visit">New Visit</string>
     <string name="show_subtitle">Show subtitle</string>
     <string name="hide_subtitle">Hide subtitle</string>
-    <string name="subtitle_format">%1d crimes</string>
+    <string name="subtitle_format">%1d visits</string>
     <string name="enter_a_ditals">Enter a ditals</string>
     <string name="owner_text">Choose Owner</string>
     <string name="visit_report_text">Send Visit Report</string>
@@ -26,7 +26,7 @@
     <string name="send_report">Send visit report via</string>
 
     <plurals name="subtitle_plural">
-        <item quantity="one">%1d crime</item>
-        <item quantity="other">%1d crimes</item>
+        <item quantity="one">%1d visit</item>
+        <item quantity="other">%1d visits</item>
     </plurals>
 </resources>
