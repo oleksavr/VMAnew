@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ВМА</string>
+    <string name="date_picker">Дата визита.</string>
+    <string name="enter_a_ditals">Введите детали</string>
+    <string name="hide_subtitle">Спрятать подзаголовок</string>
+    <string name="new_visit">Новый визит</string>
+    <string name="owner_text">Виберите хозяина</string>
+    <string name="send_report">Отослать заключение</string>
+    <string name="show_subtitle">Показать подзаголовок</string>
+    <string name="subtitle_format">1%d визитов</string>
+    <string name="vet_details_label">Детали</string>
+    <string name="vet_solved_label">Завершен</string>
+    <string name="vet_title_hint">Введите название визита</string>
+    <string name="vet_title_label">Название</string>
+    <string name="visit_date">Дата</string>
+    <string name="visit_report">Визит был в %2$s. %3$s, и %4$s</string>
+    <string name="visit_report_no_owner">Нету хозяина вдома</string>
+    <string name="visit_report_owner">Хозяина зовут %s.</string>
+    <string name="visit_report_owner_regected">Хозяин %s  отменил вызов</string>
+    <string name="visit_report_solved">Вызов закрыт</string>
+    <string name="visit_report_subject">Заключение</string>
+    <string name="visit_report_text">Отослать данные о визите</string>
+    <string name="visit_report_unsolved">Вызов не закрыт</string>
+
+    <plurals name="subtitle_plural">
+        <item quantity="one">%1d визит</item>
+        <item quantity="other">%1d визитов</item>
+        <item quantity="few">%1d визитов</item>
+        <item quantity="many">%1d визитов</item>
+    </plurals>
+</resources>

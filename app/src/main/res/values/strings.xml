@@ -25,6 +25,10 @@
     <string name="visit_report_subject">Veterinary Visit Report</string>
     <string name="send_report">Send visit report via</string>
 
+    <string name="crime_photo_button_description">Take photo of crime scene</string>
+    <string name="crime_photo_no_image_description">Crime scene photo (not set)</string>
+    <string name="crime_photo_image_description">Crime scene photo (set)</string>
+
     <plurals name="subtitle_plural">
         <item quantity="one">%1d visit</item>
         <item quantity="other">%1d visits</item>
